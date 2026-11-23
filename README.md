@@ -9,7 +9,7 @@ An AI operations assistant for a fictional logistics team. The model can't see t
 | `calculate_expression` | Exact arithmetic | `ast` allow-list evaluator, **no `eval()` / `exec()`** |
 
 - **Live demo:** https://mcp-ops-patience.streamlit.app
-- **Video walkthrough:** _add your YouTube link here_
+- **Video walkthrough:** https://youtu.be/kfylK28NHRI (6:31)
 
 ## System architecture & MCP sequence
 
