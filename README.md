@@ -8,7 +8,7 @@ An AI operations assistant for a fictional logistics team. The model can't see t
 | `get_current_weather` | Live conditions + dispatch risk from Open-Meteo | City allow-list, timeout, retry, cache, output cleaning |
 | `calculate_expression` | Exact arithmetic | `ast` allow-list evaluator, **no `eval()` / `exec()`** |
 
-- **Live demo:** _add your Streamlit URL here_
+- **Live demo:** https://mcp-ops-patience.streamlit.app
 - **Video walkthrough:** _add your YouTube link here_
 
 ## System architecture & MCP sequence

@@ -140,6 +140,6 @@ A regression test (`test_sql_tool_teaches_exact_value_formats_and_hints_on_zero_
 - The UI starts a fresh MCP server process per request (about 1 s). A long-running app would keep one session open.
 
 ## 5. My verification (tick after doing it myself)
-- [ ] `uv run pytest -v`: all tests pass (the live LLM test runs when `OPENAI_API_KEY` is set)
-- [ ] The full ops prompt in the UI calls all 3 tools and gives a grounded answer
-- [ ] The Security Workbench blocks the SQL probe and the `__import__` probe, and the server stays alive
+- [x] `uv run pytest -v`: 73 passed, including the live gpt-4o-mini test
+- [x] The full ops prompt in the UI calls all 3 tools and gives a grounded answer
+- [x] The Security Workbench blocks the SQL probe and the `__import__` probe, and the server stays alive
