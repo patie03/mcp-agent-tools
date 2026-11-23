@@ -1,0 +1,30 @@
+[project]
+name = "mcp-agent-tools"
+version = "0.1.0"
+description = "Tool-augmented AI assistant backed by a Model Context Protocol (MCP) server"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.20,<2",
+    "openai",
+    "httpx",
+    "pydantic",
+    "aiosqlite",
+    "fastapi",
+    "uvicorn",
+    "python-dotenv",
+    "pytest",
+    "pytest-asyncio",
+    "streamlit",
+    "pandas",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["live: needs OPENAI_API_KEY and internet"]
